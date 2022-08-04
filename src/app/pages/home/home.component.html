@@ -1,0 +1,71 @@
+<div class="w-screen h-screen bg-cover bg-center bg-fixed" style="background-image: url(./assets/hero.jpeg);">
+  <div
+    class="flex flex-col w-full h-full justify-center items-center sm:text-[5em] text-6xl text-center font-extrabold text-white bg-gray-900 bg-opacity-40">
+    <div class="my-3">
+      <span>
+        Simon Brännström
+      </span>
+    </div>
+    <div class="my-3">
+      <span class="text-6xl">
+        Codes
+      </span>
+    </div>
+    <div>
+      <button type="button" (click)="scrollToAnchor('main')"
+        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-400 hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
+        Go on...
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="main" class="h-full w-screen">
+
+  <section id="previousWork">
+    <div class="flex justify-center mt-8">
+      <span class="text-extrabold text-6xl tracking-tight mx-auto">
+        Websites
+      </span>
+    </div>
+  </section>
+
+
+  <section class="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0 antialiased">
+    <section class="grid lg:grid-cols-2 2xl:grid-cols-3 grid-cols-1 gap-40">
+      <article
+        class="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-300 hover:-translate-y-2 cursor-pointer group rounded-lg"
+        style="background-image: url(./assets/lahartanddesign.png);">
+        <a href="https://lahartanddesign.se" target="_blank"
+          class="bg-black bg-opacity-20 min-h-full px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300 rounded-lg">
+          <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+            LAH Art and Design
+          </h1>
+          <div
+            class="w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+          </div>
+          <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+            Art website custom made with Angular and Tailwind CSS <br> &nbsp;
+          </p>
+        </a>
+      </article>
+
+      <article
+        class="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group rounded-lg"
+        style="background-image: url(./assets/blyglasdesign.png);">
+        <div
+          class="bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300 rounded-lg">
+          <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+            Blyglasdesign Luleå AB
+          </h1>
+          <div
+            class="w-16 h-2 bg-sky-400 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+          </div>
+          <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+            Company website built with Angular, Tailwind CSS and Angular Material <br> &nbsp;
+          </p>
+        </div>
+      </article>
+    </section>
+  </section>
+</div>
